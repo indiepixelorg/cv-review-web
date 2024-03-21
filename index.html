@@ -2,13 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.png" /> -->
+    <!-- <link rel="icon" href="./images/favicon.png" /> -->
     <meta name="viewport" content="minimum-scale=1, maximum-scale=1, initial-scale=1, width=device-width" />
-    <!-- <meta name="theme-color" content="#f0f3f8" />
-    <meta name="description" content="CV Review Description" />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
-    <title>CV Review AI</title>
+    <!-- <meta name="description" content="CV Review Description" /> -->
+    <title>CV Review</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
@@ -19,173 +16,175 @@
   <body>
     
     <header>
-      <img src="images/logo.jpg" />
+      <a class="logo">
+        <span class="material-symbols-outlined">menu_book</span>
+      </a>
       <ul class="horizontal">
         <li>
-          <a href="#">Home</a>
+          <a href="./index.html">Home</a>
         </li>
         <li>
-          <a href="#">Features</a>
+          <a href="./index.html#features">Features</a>
         </li>
         <li>
-          <a href="#">Pricing</a>
+          <a href="./buy.html">Pricing</a>
         </li>
         <li>
           <a href="#">Contact</a>
         </li>
         <li>
-          <button class="cta">Get started</button>
+          <a class="button-like" href="./buy.html">Upload your CV</a>
         </li>
       </ul>
     </header>
 
     <section>
       <h1>Let your CV stand out from the crowd!</h1>
-      <div>Upload your resume and get an instant feedback with clear suggestions for improvements.</div>
+      <div class="main-text">Upload your resume and get an instant feedback with clear suggestions for improvements.</div>
+      <a class="button-like cta" href="./buy.html">Review your CV</a>
     </section>
 
     <section>
       <h2>Trusted by companies all over the world</h2>
-      <ul class="horizontal">
-        <li>Company 1</li>
-        <li>Company 2</li>
-        <li>Company 3</li>
+      <ul class="trusted-companies">
+        <li>
+          <img decoding="async" width="1024" height="232" src="./images/impsum1.svg" class="trusted-company-logo" alt="">
+        </li>
+        <li>
+          <img decoding="async" width="1024" height="232" src="./images/impsum2.svg" class="trusted-company-logo" alt="">
+        </li>
+        <li>
+          <img decoding="async" width="1024" height="232" src="./images/impsum4.svg" class="trusted-company-logo" alt="">
+        </li>
       </ul>
-      <button class="cta">Review your CV</button>
     </section>
 
     <section>
-      <h2>Make a great first impression!</h2>
-      <div>Your CV is a first thing that your future employer will see about you. If you blow this opportunity, you may not get a second chance!</div>
-      <ul class="vertical">
-        <li>Upload your CV</li>
-        <li>Get the feedback</li>
-        <li>Iterate</li>
+      <h2>Be sure to make a great first impression!</h2>
+      <div class="main-text">Your CV is a first thing that your future employer will see about you. If you blow this opportunity, you may not get a second chance!</div>
+      <ul class="vertical-points">
+        <li>
+          <div class="icon">
+            <span class="material-symbols-outlined">menu_book</span>
+          </div>
+          <span class="text">Upload your CV</span>
+        </li>
+        <li>
+          <div class="icon">
+            <span class="material-symbols-outlined">menu_book</span>
+          </div>
+          <span class="text">Get the feedback</span>
+        </li>
+        <li>
+          <div class="icon">
+            <span class="material-symbols-outlined">menu_book</span>
+          </div>
+          <span class="text">Iterate</span>
+        </li>
       </ul>
     </section>
 
     <section>
       <h2>Spend less time working on your CV.</h2>
-      <div>By submiting your resume, you get a list of ideas and potential improvements that you can instantly apply to your resume which allows you to spend more time doing the things you love.</div>
-      <button class="cta">Submit your resume</button>
-    </section>
-
-    <section>
-      <h2>Automate. Integrate. Streamline.</h2>
-      <div>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis</div>
-      <ul class="horizontal">
+      <div class="main-text">By submiting your resume, you get a list of ideas and potential improvements that you can instantly apply to your resume. This allows you to spend more time doing the things you love.</div>
+      <ul class="boxes">
         <li>
-          <div class="box">
-            <h3>Create an Account</h3>
-            <div>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa</div>
-          </div>
+          <div class="number">1.</div>
+          <h4>Upload your CV</h4>
+          <div>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa</div>
         </li>
         <li>
-          <div class="box">
-            <h3>Connect WorkFlowPro</h3>
-            <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </div>
-          </div>
+          <div class="number">2.</div>
+          <h4>Get the feedback</h4>
+          <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </div>
         </li>
         <li>
-          <div class="box">
-            <h3>Start Automating</h3>
-            <div>Ut enim ad minima veniam, quis nostrum exercitationem ullam</div>
-          </div>
+          <div class="number">3.</div>
+          <h4>Iterate</h4>
+          <div>Ut enim ad minima veniam, quis nostrum exercitationem ullam</div>
         </li>
       </ul>
-      <button class="cta">Check your CV now</button>
-    </section>
-
-    <section>
-      <h2>Accessible through all devices</h2>
-      <div>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur.</div>
-      <img src="images/devices.jpg" />
-    </section>
-
-    <section>
-      <h2>Key Features</h2>
-      <div>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur.</div>
-      <ul class="horizontal">
-        <li>
-          <div className="box">
-            <h3>Suggestion for improvements</h3>
-            <div>Ut enim ad minima veniam, quis nostrum exercitationem ullam</div>
-          </div>
-        </li>
-        <li>
-          <div className="box">
-            <h3>Pinpoint grammar mistakes</h3>
-            <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
-          </div>
-        </li>
-        <li>
-          <div className="box">
-            <h3>Compare your CV with others</h3>
-            <div>Lorem ipsum dolor sit amet consectetur</div>
-          </div>
-        </li>
-      </ul>
-      <ul class="horizontal">
-        <li>
-          <div className="box">
-            <h3>Works with all languages</h3>
-            <div>Lorem ipsum dolor sit amet consectetur adipiscing</div>
-          </div>
-        </li>
-        <li>
-          <div className="box">
-            <h3>Powered by AI</h3>
-            <div>At vero eos et accusamus et iusto odio dignissimos ducim</div>
-          </div>
-        </li>
-        <li>
-          <div className="box">
-            <h3>Less than 5 minutes</h3>
-            <div>Ut enim ad minima veniam, quis nostrum exercitationem ullam</div>
-          </div>
-        </li>
-      </ul>
-      <button class="cta">Upload your CV</button>
+      <a class="button-like cta" href="./buy.html">Submit your resume</a>
     </section>
 
     <section>
       <h2>Get a job that you deserve!</h2>
-      <div>By improving your CV you'll greatly increase your chances of getting a job that you deserve. Stop wasting time and review your CV now!</div>
+      <div class="main-text">By improving your CV you'll greatly increase your chances of getting a job that you deserve. Stop wasting time and review your CV now!</div>
+    </section>
+
+    <section id="features">
+      <h2>Key Features</h2>
+      <div class="main-text">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur.</div>
+      <ul class="boxes">
+        <li>
+          <h5>Suggestion for improvements</h5>
+          <div>Ut enim ad minima veniam, quis nostrum exercitationem ullam</div>
+        </li>
+        <li>
+          <h5>Pinpoint grammar mistakes</h5>
+          <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+        </li>
+        <li>
+          <h5>Compare your CV with others</h5>
+          <div>Lorem ipsum dolor sit amet consectetur</div>
+        </li>
+        <li>
+          <h5>Works with all languages</h5>
+          <div>Lorem ipsum dolor sit amet consectetur adipiscing</div>
+        </li>
+        <li>
+          <h5>Powered by AI</h5>
+          <div>At vero eos et accusamus et iusto odio dignissimos ducim</div>
+        </li>
+        <li>
+          <h5>Less than 5 minutes</h5>
+          <div>Ut enim ad minima veniam, quis nostrum exercitationem ullam</div>
+        </li>
+      </ul>
+      <a class="button-like cta" href="./buy.html">Upload your CV</a>
+    </section>
+
+    <section>
+      <h2>Accessible through all devices</h2>
+      <div class="main-text">No matter if you're using a mobile phone or a computer. You can get a feedback on your CV in seconds.</div>
+      <img src="images/devices.jpg" alt="devices" />
     </section>
 
     <footer>
-      <ol class="horizontal">
-        <li>
+      <div class="horizontal">
+        <a class="logo">
+          <span class="material-symbols-outlined">menu_book</span>
+          <span class="logo-text">CV Review</span>
+        </a>
+        <div class="horizontal">          
           <ol class="vertical">
             <li>
-              <a href="#">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li>
-              <a href="#">Features</a>
+              <a href="./index.html#features">Features</a>
             </li>
             <li>
-              <a href="#">Pricing</a>
+              <a href="./buy.html">Pricing</a>
             </li>
             <li>
               <a href="#">Contact</a>
             </li>
           </ol>
-        </li>
-
-        <li>
           <ol class="vertical">
             <li>
-              <a href="#">Privacy</a>
+              <a href="./privacy.html">Privacy</a>
             </li>
             <li>
-              <a href="#">Cookies</a>
+              <a href="./cookies.html">Cookies</a>
             </li>
             <li>
-              <a href="#">Terms and Conditions</a>
+              <a href="./terms.html">Terms and Conditions</a>
             </li>
           </ol>
-        </li>
-      </ol>
+        </div>
+      </li>
+      </div>
       <div>
         Copyright © 2024 | Made with &#x2764;
       </div>
