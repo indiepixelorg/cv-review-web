@@ -144,35 +144,51 @@ section {
   }
 }
 
+.box {
+  box-shadow: rgba(222, 231, 239, 0.3) 0px 2px 8px 4px;
+}
+
 .boxes {
   display: flex;
   flex-direction: row;
   margin-top: 60px;
   margin-bottom: 20px;
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
 
+  &.wide {
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+
   > li {
+    @extend .box;
     border-radius: 40px;
     background: white;
-    padding: 40px;
-    box-shadow: rgba(222, 231, 239, 0.3) 0px 2px 8px 4px;
+    padding: 30px;
     text-align: left;
     box-sizing: border-box;
-    width: 280px;
+    flex: 0 0 calc(33% - 15px);
+    gap: 15px;
 
-    > div.number {
+    div.number {
       @extend .w-600;
       font-size: 20px;
       color: rgba(2, 71, 81, 0.2);
     }
 
-    > h4 {
+    > .rounded-icon {
+      flex: 0 0 60px;
+      border-radius: 20px;
+    }
+
+    h4 {
       margin-bottom: 20px;
     }
 
-    > h5 {
+    h5 {
       margin-bottom: 20px;
     }
   }
@@ -221,22 +237,27 @@ ul.vertical-points {
       margin-bottom: 0;
     }
 
-    > div.icon {
-      color: #024751;
+    > .rounded-icon {
       background: white;
-      width: 60px;
-      height: 60px;
-      border-radius: 100%;
-
-      > span {
-        font-size: 32px;
-        margin-top: 12px;
-      }
     }
 
     > span.text {
       margin-left: 20px;
     }
+  }
+}
+
+.rounded-icon {
+  color: #024751;
+  background: #f7fbfe;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  text-align: center;
+
+  > span {
+    font-size: 32px;
+    margin-top: 12px;
   }
 }
 
@@ -275,6 +296,7 @@ button {
 
 footer {
   padding-top: 80px;
+  margin-top: 80px;
   padding-bottom: 120px;
   background: #102830;
   color: white;
@@ -311,5 +333,59 @@ footer {
 
   > div {
     @extend .full-width;
+  }
+}
+
+.image-with-shadow {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.cv-image {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: -20px;
+  position: relative;
+  overflow: hidden;
+  @extend .image-with-shadow;
+
+  > img {
+    width: 100%;
+  }
+}
+
+.text-by-image {
+  @extend .horizontal;
+  text-align: left;
+  gap: 80px;
+
+  > div.image {
+    display: flex;
+    align-items: center;
+
+    > div.outline {
+      background: white;
+      padding: 20px;
+      @extend .image-with-shadow;
+
+      &.invisible {
+        padding: 10px;
+      }
+
+      > img {
+        width: 260px;
+        height: auto;
+        display: block;
+
+        &.big {
+          width: 400px;
+        }
+      }
+    }
+  }
+
+  > div.text {    
+    display: flex;
+    align-items: center;
   }
 }
