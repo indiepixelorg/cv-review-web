@@ -106,6 +106,8 @@ header {
   align-items: center;
 
   > a.logo {
+    color: #102830;
+
     &:hover {
       color: #102830;
     }
@@ -115,7 +117,7 @@ header {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background: #024751;
+    background: #102830;
     padding: 0;
   }
   
@@ -417,6 +419,30 @@ footer {
       padding-left: 20px;
       padding-right: 20px;
     }
+    
+    #hamburger-menu {
+      display: none;
+      flex-direction: column;
+      background: #102830;
+      text-align: center;
+      padding: 20px 0;
+
+      > li {
+        > a {
+          display: block;
+          padding: 20px 0;
+          color: white;
+
+          &:hover {
+            color: #00d47e;
+          }
+        }
+      }
+
+      &.expanded {
+        display: flex;
+      }
+    } 
 
     h1 {
       font-size: 38px;

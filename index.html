@@ -36,10 +36,25 @@
           <a class="button-like" href="./buy.html">Upload your CV</a>
         </li>
       </ul>
-      <button class="hamburger show-only-on-mobile">
+      <button class="hamburger show-only-on-mobile" onClick="document.getElementById('hamburger-menu').classList.toggle('expanded');">
         <span class="material-symbols-outlined">menu</span>
       </button>
     </header>
+
+    <ul id="hamburger-menu" class="expanded">
+      <li>
+        <a href="./index.html">Home</a>
+      </li>
+      <li>
+        <a href="./index.html#features">Features</a>
+      </li>
+      <li>
+        <a href="./buy.html">Pricing</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
 
     <section>
       <h1>Let your CV stand out from the crowd!</h1>
