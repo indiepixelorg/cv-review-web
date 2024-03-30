@@ -332,6 +332,10 @@ footer a {
   align-items: center;
 }
 
+.show-only-on-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 544px) {
   body:not(.force-desktop) .hide-on-mobile {
     display: none;

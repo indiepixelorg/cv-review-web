@@ -400,6 +400,9 @@ footer {
   }
 }
 
+.show-only-on-mobile {
+  display: none;
+}
 
 @media only screen and (max-width: 544px) {
   body:not(.force-desktop) {
